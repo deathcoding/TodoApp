@@ -40,7 +40,6 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "src/**/*.{css,html}":  "prettier --write",
-    "src/**/*.{js,jsx}": "eslint --fix"
+    "src/**/*.{css,html,js,jsx}": ["prettier --write", "eslint --fix", "git add"]
     }
 }
