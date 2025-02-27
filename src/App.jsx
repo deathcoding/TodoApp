@@ -5,8 +5,6 @@ import TaskList from "./components/TaskList/TaskList";
 import Footer from "./components/Footer/Footer";
 import { useState } from "react";
 
-console.log("foo");
-
 function App() {
   const [todoItems, setTodoItems] = useState([]);
 
