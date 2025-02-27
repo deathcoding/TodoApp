@@ -42,10 +42,10 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js, html, css}": [
+    "*.{js,html,css}": [
       "format"
     ],
-    "src/**/*.jsx": [
+    "*.jsx": [
       "lint:fix"
     ]
   }
