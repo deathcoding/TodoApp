@@ -9,8 +9,7 @@
     "lint": "eslint src/*",
     "lint:fix": "eslint src/* --fix",
     "format": "prettier --write .",
-    "preview": "vite preview",
-    "prepare": "husky"
+    "preview": "vite preview"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
@@ -41,6 +40,7 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js|jsx}": ["eslint --fix", "prettier --write"]
+    "src/**/*.{css,html}":  "prettier --write",
+    "src/**/*.{js, jsx}": "eslint --fix"
     }
 }
