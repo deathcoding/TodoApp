@@ -40,7 +40,11 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "*.js": ["eslint --fix", "prettier --write"],
-    "*.jsx": ["eslint --fix", "prettier --write"]
-    }
+    "src/*/**.{js, html, css}": [
+      "prettier --write"
+    ],
+    "src/*.jsx": [
+      "eslint --fix"
+    ]
+  }
 }
